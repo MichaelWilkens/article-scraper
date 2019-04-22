@@ -1,0 +1,53 @@
+<header id='news-header'>
+    <img id='logo' src='./images/logo.png'>
+    <h1 id='latest-articles'>saved articles</h1>
+</header>
+
+<img id='background' src='./images/background.jpg!d'>
+
+<div class='card-wrapper'>
+    {{#each dbArticles}}
+    <div class="card align-top favorites-card">
+        <a href='{{link}}' target='_blank'><img src="{{photo}}" class="card-img-top" alt="article photo"></a>
+        <div class="card-body">
+            <a class='newsarticlelink' href='{{link}}' target='_blank'>
+                <h5 class="card-title">{{title}}</h5>
+            </a>
+            <a mongoid='{{_id}}' href="#" class="btn btn-primary delete-article-button">Delete</a>
+            <button type="button" article-id={{_id}} class="btn btn-primary comment-article-button" data-toggle="modal" data-target="#modal-{{_id}}">
+                Comments
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-{{_id}}" tabindex="-1" role="dialog" aria-labelledby="modal-{{_id}}Label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-{{_id}}Label">Notes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button"  article-id={{_id}} class="add-new-note btn btn-primary">Add note</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {{/each}}
+</div>
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

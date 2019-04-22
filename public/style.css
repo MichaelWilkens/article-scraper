@@ -1,0 +1,128 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+iframe {
+    width: 110vw;
+    height:80vh;
+    margin: -95px 0px 0px -100px;
+    opacity:0.6;
+    z-index:-10;
+}
+
+nav {
+    position:fixed;
+    top:0px;
+    z-index:10;
+}
+
+#welcome-message {
+    font-size: 4em;
+    padding: 10px;
+    border: 5px solid white;
+    margin-top:20px;
+    width:97vw;
+}
+
+#searchtext {
+    color: black;
+}
+
+#searchtext:hover {
+    text-decoration: none;
+    color:grey;
+}
+
+h4 {
+    padding-left: 5px;
+}
+
+.card {
+    display: inline-block;
+    margin: 20px 5px;
+    height: 350px;
+    width:300px;    
+}
+
+.delete-article-button {
+    display:inline-block;
+    width:35%;
+    margin-left:160px;
+
+}
+
+.comment-article-button {
+    display:inline-block;
+    width: 50%;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.newsarticlelink {
+    color:black
+}
+
+.newsarticlelink:hover {
+    text-decoration: none;
+}
+
+.btn {
+    position: absolute;
+    bottom:10px;
+}
+
+.card-title:hover {
+    color: red;
+}
+
+.card-img-top {
+    max-height: 170px;
+    transition: transform .1s; /* Animation */
+  }
+  
+.card-img-top:hover {
+    transform: scale(1.04); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.card-wrapper {
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: lightgrey;
+    margin: 0px auto;
+    min-height:100vh;
+}
+ #logo{
+   width:400px;
+   height: 100px;
+   margin-top:20px;
+ }
+
+ #latest-articles {
+    color:red;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 8em;
+ }
+
+ #background {
+    min-height:50vh; 
+    position:fixed;
+    top:0px;
+    left:0px;
+    opacity:0.6
+ }
+
+ #news-header {
+    text-align: center;
+ }
+
+ 
+ @media (min-width: 1250px){
+    #background {
+        min-width:100vw;
+    }
+ }
+

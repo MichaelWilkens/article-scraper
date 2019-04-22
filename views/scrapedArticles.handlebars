@@ -1,0 +1,20 @@
+<header id='news-header'>
+    <img id='logo' src='./images/logo.png'>
+    <h1 id='latest-articles'>latest articles</h1>
+</header>
+
+<img id='background' src='./images/background.jpg!d'>
+
+<div class='card-wrapper'>
+    {{#each allArticles}}
+    <div class="card align-top scraped-card">
+        <a href = '{{link}}' target='_blank'><img src="{{photo}}" class="card-img-top" alt="article photo"></a>
+        <div class="card-body">
+            <a class='newsarticlelink' href ='{{link}}' target='_blank'><h5 class="card-title">{{title}}</h5></a>
+            <a href="#" class="btn btn-primary save-article-button">Save Article</a>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
